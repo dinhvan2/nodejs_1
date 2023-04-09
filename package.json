@@ -24,7 +24,12 @@
   },
   "homepage": "https://github.com/dinhvan2/nodejs_1#readme",
   "lint-staged": {
-"src/**/*.{js,json,scss}" : "prettier --single-quote --trailing-comma all --write"
+  "src/**/*.{js,json,scss}" : "prettier --single-quote --trailing-comma all --write"
+  },
+  "husky":{
+"hooks":{
+  "pre-commit":"npm test"
+}
   },
   "dependencies": {
     "express": "^4.18.2",
